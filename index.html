@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kazi Morwan | Day-12</title>
+    <link
+      rel="shortcut icon"
+      sizes="32x32"
+      href="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-slate-800 text-gray-100 grid place-items-center h-screen">
+    <div class="bg-slate-700 pt-5 pb-3 px-3 rounded-md w-120 space-y-5">
+      <div class="flex flex-col items-center gap-5">
+        <input
+          type="text"
+          id="guest"
+          placeholder="Guest Name"
+          class="bg-slate-800 px-3 py-1.5 w-full rounded outline-none border-2 border-transparent focus:border-gray-500 transition"
+          autofocus
+        />
+        <button
+          id="add"
+          class="bg-green-400 text-slate-800 py-2 px-10 uppercase rounded-md font-bold text-xl cursor-pointer"
+        >
+          Add
+        </button>
+      </div>
+      <div>
+        <h3 class="text-center text-2xl mb-3 font-medium">
+          Here is your Guest List
+        </h3>
+        <ul
+          id="guests"
+          role="list"
+          class="list-decimal list-inside p-2 max-h-135 overflow-y-auto rounded-md space-y-2"
+        ></ul>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
